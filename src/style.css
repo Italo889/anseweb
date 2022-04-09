@@ -1,0 +1,96 @@
+:root {
+  --dark-color: #333;
+}
+
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #121214;
+  color: #9C9CAD;
+}
+
+#header {
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  position: absolute;
+  left: 40px;
+  border-bottom: 2px solid rgb(184, 179, 179);
+}
+
+#logo .an {
+  color: #f10d0d;
+}
+
+#logo .se {
+  color: #534f4f;
+}
+
+#search {
+  height: 50px;
+  width: 600px;
+  outline: none;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #babac5;
+  background-color: #1F1F33;
+  border: none;
+}
+
+#btn {
+  border: none;
+  height: 50px;
+  width: 150px;
+  color: #babac5;
+  background-color: #1F1F33;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 630px;
+
+  margin: 10px 10px 70px 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #1F1F33;
+  padding: 15px;
+
+  overflow-y: hidden;
+  border-radius: 3px;
+}
+
+.card-image {
+  justify-self: center;
+
+  max-width: 300px;
+  max-height: 350px;
+
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 5px 0;
+}
