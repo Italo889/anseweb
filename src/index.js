@@ -11,7 +11,8 @@ btn.addEventListener("click", () => {
 
 
 const apiRequest = async (animeSearch) => {
-  const request = await fetch(`https://api.jikan.moe/v4/anime?q=${animeSearch}&limit=12`)
+  document.getElementById('root').innerText=''
+  const request = await fetch(`https://api.jikan.moe/v4/anime?q=${animeSearch}&sfw=true`)
     .then(req => req.json())
     .then(res => res)
 
